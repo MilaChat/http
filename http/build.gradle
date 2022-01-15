@@ -1,15 +1,19 @@
 plugins {
+    id 'com.github.dcendents.android-maven'
     id 'com.android.library'
 }
 
 group 'com.github.MilaChat'
 
 android {
-    compileSdk 30
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdk 21
-        targetSdk 30
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -22,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility 15
-        targetCompatibility 15
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
